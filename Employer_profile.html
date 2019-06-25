@@ -27,13 +27,29 @@
 			<div class="row nav-style">
 				<div class="col-lg-4">
 					<img src="images/wqlogo.png" class="header-logo" alt="logo">
+					<div class="row header-opt mobile-view">
+						<div class="col-lg-2 pt6">
+							<div id="mySidenav" class="sidenav">
+								  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+								  <a href="#">Home</a>
+								  <a href="#">Notification</a>
+								  <a href="#">Settings</a>
+								  <a href="#">About</a>
+								  <a href="#">Services</a>
+								  <a href="#">Clients</a>
+								  <a href="#">Contact</a>
+							</div>
+							<span style="font-size:30px; cursor:pointer" onclick="openNav()"><img src="images/sidenav" alt="logo">
+							</span>
+						</div>
+					</div>
 				</div>
 				<div class="col-lg-4 header-uname">
 					<h4>Your Name</h4>
 					<h6>Designation</h6>
 				</div>
 				<div class="col-lg-4">
-					<div class="row header-opt">
+					<div class="row header-opt mobile-bar">
 						<div class="col-lg-2 header-opt-home ">
 							<img src="images/home" alt="logo">
 						</div>
@@ -44,15 +60,14 @@
 							<img src="images/setting" alt="logo">
 						</div>	
 						<div class="col-lg-2 pt6">
-							<div id="mySidenav" class="sidenav">
-								  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+							<div id="mySidenav1" class="sidenav">
+								  <a href="javascript:void(0)" class="closebtn1" onclick="closeNav1()">&times;</a>
 								  <a href="#">About</a>
 								  <a href="#">Services</a>
 								  <a href="#">Clients</a>
 								  <a href="#">Contact</a>
 							</div>
-							<span style="font-size:30px;cursor:pointer" onclick="openNav()">
-								<img src="images/sidenav" alt="logo">
+							<span style="font-size:30px;cursor:pointer" onclick="openNav1()"><img src="images/sidenav" alt="logo">
 							</span>
 						</div>
 					</div>
@@ -60,7 +75,7 @@
 			</div>
 			<div class="row proflie-emp-cont">
 				<div class="col-lg-2">
-					<img src="images/back" style="float: right;margin-top:10px;margin-right: 5px;" alt="logo" class="prof-img">
+					<img src="images/back" alt="logo" class="prof-img back-btn">
 				</div>
 				<div class="col-lg-8 profile-emp">
 					<div class="row">
@@ -231,6 +246,14 @@
 
 		function closeNav() {
 		  document.getElementById("mySidenav").style.width = "0";
+		}
+
+		function openNav1() {
+		  document.getElementById("mySidenav1").style.width = "250px";
+		}
+
+		function closeNav1() {
+		  document.getElementById("mySidenav1").style.width = "0";
 		}
 	</script>
 </body>
